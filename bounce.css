@@ -1,0 +1,122 @@
+body
+{
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ font-family: 'Fredoka One',cursive;
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3c1a5b;
+    position: relative;
+}
+.text-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.text{
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #fff748;
+    margin: 0 10px;
+    text-shadow: 0 0 18px #b79c3a;
+    user-select: none;
+    position: relative;
+
+}
+
+@keyframes bounceleft {
+    0%{
+        top:-800px
+    }
+    15%{
+        top:250px;
+        transform: rotate(180deg);
+    }
+    30%{
+        top:-250px;
+    }
+    40%{
+        top: 150px;
+    }
+    60%{
+        top: -150px;
+    }
+    75%{
+        top: 50px;
+    }
+    90%{
+        top:- 50px;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+@keyframes bounceRight {
+    0%{
+        top:-800px
+    }
+    15%{
+        top:250px;
+        transform: rotate(180deg);
+    }
+    30%{
+        top:-250px;
+    }
+    40%{
+        top: 150px;
+    }
+    60%{
+        top: -150px;
+    }
+    75%{
+        top: 50px;
+    }
+    90%{
+        top:- 50px;
+    }
+    100%{
+        top: 0;
+    }
+}
+.text-b
+{
+    animation: bounceleft 2s;
+}
+.text-o
+{
+    animation: bounceRight 2.2s;
+}
+.text-u
+{
+    animation: bounceleft 1.5s;
+}
+.text-n
+{
+    animation: bounceleft 1.4s;
+}
+.text-c
+{
+    animation: bounceRight 1.9s;
+}
+.text-e
+{
+    animation: bounceRight 1.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
